@@ -11,10 +11,8 @@
         <div class="center text-big bold">
             Hi! I am Anurag and this is my first webapp.
         </div>
-	<div class="center">
 	<h2>Announcement</h2>
 	<p>My new profile page is coming up soon...</p>
-	</div>
         <script type="text/javascript" src="/ui/main.js">
         </script>
     </body>
