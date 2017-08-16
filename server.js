@@ -9,7 +9,31 @@ var articleOne = {
     title: 'Article One | Anurag Bhattacharya',
     heading: 'Article One',
     date: '16th August, 2017',
-    content: `<p>This article is meant for writing random content. This is purely meant for learning application developement and holds no             significance as of now. Yet this is my first article content that I am writing and this is really important for me. I              had the wish to start my own blog. Well I have already written three lines of useless junk that is to trashed even                 before a single glance can be paid to it. I think I have written enough copy for now. I am gone.</p>
+    content: `<p>This article is meant for writing random content. This is purely meant for learning application developement and holds no           significance as of now. Yet this is my first article content that I am writing and this is really important for me. I             had the wish to start my own blog. Well I have already written three lines of useless junk that is to trashed even                before a single glance can be paid to it. I think I have written enough copy for now. I am gone.</p>
+                
+              <p>This article is meant for writing random content. This is purely meant for learning application developement and holds no significance as of now. Yet this is my first article content that I am writing and this is really important for me. I had the wish to start my own blog. Well I have already written three lines of useless junk that is to trashed even before a single glance can be paid to it. I think I have written enough copy for now. I am gone.</p>
+                
+              <p>This article is meant for writing random content. This is purely meant for learning application developement and holds no significance as of now. Yet this is my first article content that I am writing and this is really important for me. I had the wish to start my own blog. Well I have already written three lines of useless junk that is to trashed even before a single glance can be paid to it. I think I have written enough copy for now. I am gone</p>
+    `
+};
+
+var articleTwo = {
+    title: 'Article Two | Anurag Bhattacharya',
+    heading: 'Article Two',
+    date: '17th August, 2017',
+    content: `<p>This article is meant for writing random content. This is purely meant for learning application developement and holds no           significance as of now. Yet this is my first article content that I am writing and this is really important for me. I             had the wish to start my own blog. Well I have already written three lines of useless junk that is to trashed even                before a single glance can be paid to it. I think I have written enough copy for now. I am gone.</p>
+                
+              <p>This article is meant for writing random content. This is purely meant for learning application developement and holds no significance as of now. Yet this is my first article content that I am writing and this is really important for me. I had the wish to start my own blog. Well I have already written three lines of useless junk that is to trashed even before a single glance can be paid to it. I think I have written enough copy for now. I am gone.</p>
+                
+              <p>This article is meant for writing random content. This is purely meant for learning application developement and holds no significance as of now. Yet this is my first article content that I am writing and this is really important for me. I had the wish to start my own blog. Well I have already written three lines of useless junk that is to trashed even before a single glance can be paid to it. I think I have written enough copy for now. I am gone</p>
+    `
+};
+
+var articleThree = {
+    title: 'Article Three | Anurag Bhattacharya',
+    heading: 'Article Three',
+    date: '18th August, 2017',
+    content: `<p>This article is meant for writing random content. This is purely meant for learning application developement and holds no           significance as of now. Yet this is my first article content that I am writing and this is really important for me. I             had the wish to start my own blog. Well I have already written three lines of useless junk that is to trashed even                before a single glance can be paid to it. I think I have written enough copy for now. I am gone.</p>
                 
               <p>This article is meant for writing random content. This is purely meant for learning application developement and holds no significance as of now. Yet this is my first article content that I am writing and this is really important for me. I had the wish to start my own blog. Well I have already written three lines of useless junk that is to trashed even before a single glance can be paid to it. I think I have written enough copy for now. I am gone.</p>
                 
@@ -66,15 +90,13 @@ app.get('/articleOne', function(req, res) {
   res.send(createTemplate(articleOne));
 });
 
-app.get('/article-two', function(req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
+app.get('/articleTwo', function(req, res) {
+  res.send(createTemplate(articleTwo));
 });
 
-app.get('/article-three', function(req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
+app.get('/articleThree', function(req, res) {
+  res.send(createTemplate(articleThree));
 });
-
-
 
 
 // Do not change port, otherwise your app won't run on IMAD servers
