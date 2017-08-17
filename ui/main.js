@@ -4,12 +4,12 @@ console.log('Loaded!');
 
 var image = document.getElementById("madi");
 
-var marginLeft = 0; 
-function moveRight () {
-    marginLeft = marginLeft + 3;
-    image.style.marginLeft = marginLeft + 'px';
+var marginRight = 0; 
+function moveLeft () {
+    marginRight = marginRight + 3;
+    image.style.marginRight = marginRight + 'px';
 }
 
 image.onclick = function () {
-    var interval = setInterval(moveRight, 10);
+    var interval = setInterval(moveLeft, 10);
 };
