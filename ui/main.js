@@ -42,6 +42,10 @@ submit.onclick = function () {
                     for (var a=0; a<names.length; a++ ) {
                         list = list + '<li>' + names[a] + '</li>';
                     }
+                     
+                //Structure for rendering the list of names    
+                    var ul = document.getElementById('nameList');
+                    ul.innerHTML = list;
                 }
             }
             
