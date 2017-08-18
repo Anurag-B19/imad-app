@@ -45,10 +45,11 @@ submit.onclick = function () {
                 }
             }
             
+        //Structure for rendering the list of names    
+            var ul = document.getElementById('nameList');
+            ul.innerHTML = list;
         };
-    //Structure for rendering the list of names    
-        var ul = document.getElementById('nameList');
-        ul.innerHTML = list;
+    
         
     //Capturing the name from the index page and using it to make the request
         var nameInput = document.getElementById(name);
