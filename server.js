@@ -18,24 +18,14 @@ var articles = {
         title: 'Article Two | Anurag Bhattacharya',
         heading: 'Article Two',
         date: '17th August, 2017',
-        content: `<p>This article is meant for writing random content. This is purely meant for learning application developement and               holds no significance as of now. Yet this is my first article content that I am writing and this is really important           for me. I had the wish to start my own blog. Well I have already written three lines of useless junk that is to               trashed even before a single glance can be paid to it. I think I have written enough copy for now. I am gone.</p>
-                
-                  <p>This article is meant for writing random content. This is purely meant for learning application developement and holds no significance as of now. Yet this is my first article content that I am writing and this is really important for me. I had the wish to start my own blog. Well I have already written three lines of useless junk that is to trashed even before a single glance can be paid to it. I think I have written enough copy for now. I am gone.</p>
-                
-                  <p>This article is meant for writing random content. This is purely meant for learning application developement and holds no significance as of now. Yet this is my first article content that I am writing and this is really important for me. I had the wish to start my own blog. Well I have already written three lines of useless junk that is to trashed even before a single glance can be paid to it. I think I have written enough copy for now. I am gone</p>
-    `
+        content: 'This is the content for article two'
     },
 
     articleThree: {
         title: 'Article Three | Anurag Bhattacharya',
         heading: 'Article Three',
         date: '18th August, 2017',
-        content: `<p>This article is meant for writing random content. This is purely meant for learning application developement and               holds no significance as of now. Yet this is my first article content that I am writing and this is really important           for me. I had the wish to start my own blog. Well I have already written three lines of useless junk that is to               trashed even before a single glance can be paid to it. I think I have written enough copy for now. I am gone.</p>
-                
-                  <p>This article is meant for writing random content. This is purely meant for learning application developement and holds no significance as of now. Yet this is my first article content that I am writing and this is really important for me. I had the wish to start my own blog. Well I have already written three lines of useless junk that is to trashed even before a single glance can be paid to it. I think I have written enough copy for now. I am gone.</p>
-                
-                  <p>This article is meant for writing random content. This is purely meant for learning application developement and holds no significance as of now. Yet this is my first article content that I am writing and this is really important for me. I had the wish to start my own blog. Well I have already written three lines of useless junk that is to trashed even before a single glance can be paid to it. I think I have written enough copy for now. I am gone</p>
-    `
+        content: 'This is the content for article three'
     },
 };
 
