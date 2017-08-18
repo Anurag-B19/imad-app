@@ -23,3 +23,6 @@ button.onclick = function () {
    request.open('GET', "http://anuraged6.imad.hasura-app.io/counter", true);
    request.send(null);
 };
+
+//Name input and display code
+
