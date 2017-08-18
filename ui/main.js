@@ -49,9 +49,7 @@ submit.onclick = function () {
                 }
             }
             
-        //Structure for rendering the list of names    
-            var ul = document.getElementById('nameList');
-            ul.innerHTML = list;
+        
         };
     
         
