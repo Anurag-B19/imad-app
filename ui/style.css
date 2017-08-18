@@ -20,11 +20,15 @@ body {
     height: 200px;
 }
 
-.container{
+.container {
     padding: 0 350px;
     font-family: Arial;
 }
 
-#contentBox{
+#contentBox {
     margin-top: 20px;
+}
+
+#nameBox {
+    margin-bottom: 5px;
 }
