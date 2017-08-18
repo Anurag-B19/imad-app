@@ -63,7 +63,7 @@ function createTemplate(data) {
                 <div>
                     ${date}
                 </div>
-                <div>
+                <div id='contentBox'>
                     ${content}
                 </div>
             </div>
