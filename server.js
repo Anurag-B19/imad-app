@@ -76,6 +76,15 @@ function createTemplate(data) {
     return htmlTemplate;
 }
 
+var names = [];
+app.get('/submitName', function (req,res){
+    //request query looks like /submitName/?name=xxxx
+    //extracting the value of name from the request
+    var name = req.query.name;
+    names.push(name);
+    res.send(JSON.stringify(names))
+});
+
 var counter = 0;
 app.get('/counter', function (req, res) {
     counter = counter + 1;
