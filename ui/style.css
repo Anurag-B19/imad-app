@@ -32,3 +32,8 @@ body {
 #nameBox {
     margin-bottom: 3px;
 }
+
+#commentBox {
+    height: 300px;
+    width: 600px;
+}
