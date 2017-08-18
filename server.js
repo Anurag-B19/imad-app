@@ -63,7 +63,7 @@ function createTemplate(data) {
                 </div>
                 <br>
                 <div id="commentBox">
-                <input type="text" id="comments" placeholder="Write your comments here"></input>
+                <input type="text" id="comments"></input>
                 </div>
             </div>
         </body>
