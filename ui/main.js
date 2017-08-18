@@ -54,7 +54,7 @@ submit.onclick = function () {
     
         
     //Capturing the name from the index page and using it to make the request
-        var nameInput = document.getElementById(name);
+        var nameInput = document.getElementById('name');
         var name = nameInput.value;
     
     //Making the request to the servar to send the updated namelist
