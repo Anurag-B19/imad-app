@@ -82,7 +82,7 @@ app.get('/submitName', function (req,res){
     //extracting the value of name from the request
     var name = req.query.name;
     names.push(name);
-    res.send(JSON.stringify(names))
+    res.send(JSON.stringify(names));
 });
 
 var counter = 0;
