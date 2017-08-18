@@ -58,10 +58,10 @@ function createTemplate(data) {
                 </div>
                 <hr/>
                 <h4>Comments</h4>
-                <input type="text" id="comments" placeholder="Write your comments here">
-                    <div id="commentBox">
-                    </div>
-                </input>
+                <div>
+                <input type="text" placeholder="Your Name" id="name"></input>
+                <input type="text" id="comments" placeholder="Write your comments here"></input>
+                </div>
             </div>
         </body>
     </html>`;
