@@ -58,6 +58,6 @@ submit.onclick = function () {
         var name = nameInput.value;
     
     //Making the request to the servar to send the updated namelist
-        req.open('GET', 'http://anuraged6.imad.hasura-app.io/submitName/?name=' + name, true);
-        req.send(null);
+        request.open('GET', 'http://anuraged6.imad.hasura-app.io/submitName/?name=' + name, true);
+        request.send(null);
 };
