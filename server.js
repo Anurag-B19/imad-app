@@ -65,7 +65,7 @@ function createTemplate(data) {
                 <div id="commentBox">
                 <input type="text" id="comments"></input>
                 </div>
-                <button id="comment-submit">Submit your comment</button>
+                <button id="comment-submit" placeholder="Your comments">Submit your comment</button>
                 <hr>
             </div>
         </body>
