@@ -74,6 +74,17 @@ submitComment.onclick = function () {
     //Capture the response text and store it in the variables
     
         request1.onreadystatechange = function () {
-            
+          if(request1.readyState === XMLHttpRequest.DONE) {
+                if(request1.status === 200) {
+                    request2.onreadystatechange = function () {
+                      if(request2.readyState === XMLHttpRequest.DONE) {
+                          if(request2.status === 200) {
+                              names = request1.responseText;
+                              names = JSON.parse(names);
+                          }
+                    }  
+                  };
+              }
+          }  
         };
 };
