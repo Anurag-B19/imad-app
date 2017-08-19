@@ -79,12 +79,32 @@ submitComment.onclick = function () {
                     request2.onreadystatechange = function () {
                       if(request2.readyState === XMLHttpRequest.DONE) {
                           if(request2.status === 200) {
-                              names = request1.responseText;
-                              names = JSON.parse(names);
+                              namesOfComment = request1.responseText;
+                              namesOfComment = JSON.parse(namesOfComment);
+                              comments = request2.responseText;
+                              comments = JSON.parse(comments);
+                              var list1 = '';
+                              for (var a=0; a<namesOfComment; a++) {
+                                  list1 = list1 +'<li>'+'<p>'+namesOfComment[a]+'</p>'+'<p>'+comments[a]+'</p>'+'</li>';
+                              }
+                              var ul1 = document.getElementById('nameCommentList');
+                              ul1.innerHTML = list1;
                           }
                     }  
                   };
               }
           }  
         };
+        
+        //Making the requests
+        
+        var name1Input = document.getElementById(name1);
+        var name1 = name1Input.value;
+        var comment1Input = document.getElementById(comments1);
+        var comment1 = comment1Input.value;
+        
+        request1.open('GET', 'http://anuraged6.imad.hasura-app.io/submitNameOfComment/?nameOfComment=' + name1, true);
+        request1.send(null);
+        request2.open('GET', 'http://anuraged6.imad.hasura-app.io/submitComment/?comment=' + comment1, true);
+        request2.send(null);
 };
