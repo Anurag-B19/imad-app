@@ -61,3 +61,19 @@ submit.onclick = function () {
         request.open('GET', 'http://anuraged6.imad.hasura-app.io/submitName/?name=' + name, true);
         request.send(null);
 };
+
+//Code for displaying name and comment on article page
+
+var submitComment = document.getElementById("comment-submit");
+submitComment.onclick = function () {
+    
+    //Create submit requests for name and comment
+        var request1 = new XMLHttpRequest();
+        var request2 = new XMLHttpRequest();
+        
+    //Capture the response text and store it in the variables
+    
+        request1.onreadystatechange = function () {
+            
+        };
+};
