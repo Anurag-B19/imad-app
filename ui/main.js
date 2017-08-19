@@ -100,11 +100,11 @@ submitComment.onclick = function () {
         
         var name1Input = document.getElementById(name1);
         var name1 = name1Input.value;
-        var comment1Input = document.getElementById(comments1);
-        var comment1 = comment1Input.value;
+        var commentInput = document.getElementById(comments1);
+        var comment = commentInput.value;
         
         request1.open('GET', 'http://anuraged6.imad.hasura-app.io/submitNameOfComment/?nameOfComment=' + name1, true);
         request1.send(null);
-        request2.open('GET', 'http://anuraged6.imad.hasura-app.io/submitComment/?comment=' + comment1, true);
+        request2.open('GET', 'http://anuraged6.imad.hasura-app.io/submitComment/?comment=' + comment, true);
         request2.send(null);
 };
