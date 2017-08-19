@@ -73,8 +73,16 @@ function createTemplate(data) {
     return htmlTemplate;
 }
 
+var comments = [];
+app.get('/submitComment', function (req, res) {
+    //request query looks like /submitComment/?comment=xxxxx
+    var comment = req.query.comment;
+    comments.push(comment);
+    res.send(JSON.stringify(comments));
+});
+
 var names = [];
-app.get('/submitName', function (req,res){
+app.get('/submitName', function (req, res){
     //request query looks like /submitName/?name=xxxx
     //extracting the value of name from the request
     var name = req.query.name;
