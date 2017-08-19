@@ -67,6 +67,8 @@ function createTemplate(data) {
                 </div>
                 <button id="comment-submit">Submit your comment</button>
                 <hr>
+                <ul id="nameCommentList">
+                </ul>
             </div>
         </body>
     </html>`;
