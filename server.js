@@ -70,6 +70,8 @@ function createTemplate(data) {
                 <ul id="nameCommentList">
                 </ul>
             </div>
+             <script type="text/javascript" src="/ui/main.js">
+             </script>
         </body>
     </html>`;
     return htmlTemplate;
